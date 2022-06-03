@@ -1,4 +1,4 @@
-:quickstart-project-name: quickstart-documentation-base
+:quickstart-project-name: ZebClient-quickstart-documentation-base
 :partner-product-name: ZebClient
 :partner-company-name: Zebware AB
 :doc-month: June
