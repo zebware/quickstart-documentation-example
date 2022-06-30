@@ -2,4 +2,16 @@
 // Briefly describe the software. Use consistent and clear branding. 
 // Include the benefits of using the software on AWS, and provide details on usage scenarios.
 
-<Describe how the software works on AWS.>
+ZebClient is a cloud data memory bridge software that operates by bringing AWS cloud data to memory. +
+
+By accessing data from memory, ZebClient delivers a guaranteed performance to applications. This enables huge cost savings as local storage can be replaced with low-cost durable cloud storage. A ZebClient deployment can be scaled to meet the requirements of different applications and use cases and offers the benefits of great flexibility and anti-vendor lock-in effects for the IT infrastructure architecture. It also keeps data private and thereby provides compliance to regulatory demands. +
+
+* *Guranteed performance* - ZebClient serves cloud data at memory speed to applications.
+
+* *Huge cost savings* - ZebClient enables huge cost savings by reducing  time for compute and replacing high-cost file storage with low-cost cloud storage.
+
+* *Endless scalability* - ZebClient provides close to linear scale-out and scale-up.
+
+* *Flexibility and anti vendor lock-in* - ZebClient disaggregates data storage from compute and enables you to easily swap your cloud service provider.
+
+* *Secured data availablity and protection* - ZebClient secures data availability and protection by storing sharded data in disaggregated durable cloud storage.

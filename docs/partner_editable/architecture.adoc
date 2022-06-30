@@ -1,29 +1,29 @@
-Deploying this Quick Start for a new virtual private cloud (VPC) with
-*default parameters* builds the following _{partner-product-name}_ environment in the
-AWS Cloud.
+When deploying this Quick Start, a ZebClient environment is installed in the AWS Cloud by use of a new virtual private cloud (VPC).
 
 // Replace this example diagram with your own. Send us your source PowerPoint file. Be sure to follow our guidelines here : http://(we should include these points on our contributors giude)
-image::architecture_diagram.png[image,width=648,height=439]
+image::architecture_diagram.png[image,width=1230,height=605]
 
-Figure 1: Quick Start architecture for _{partner-product-name}_ on AWS
+Figure 1: Quick Start architecture for ZebClient on AWS.
 
 As shown in Figure 1, the Quick Start sets up the following:
 
-* A highly available architecture that spans two Availability Zones.*
-* A VPC configured with public and private subnets, according to AWS
-best practices, to provide you with your own virtual network on AWS.*
+1. ZebClient CLI (Command Line Interface) is available for Windows, macOS, Linux and interact with ZebClient Manager. ZebClient CLI configures ZebClient and create, update, or remove a cluster.
 
-In the public subnets:
+2. ZebClient Manager running as a SaaS service is ready for service in a multi-tenant way.
 
-* Managed network address translation (NAT) gateways to allow outbound
-internet access for resources in the private subnets.*
-* A Linux bastion host in an Auto Scaling group to allow inbound Secure
-Shell (SSH) access to EC2 instances in public and private subnets.*
+3. ZebClient Manager can optionally be installed in VPC with a single command in ZebClient CLI.
+
+4. Configure & Deploy starts when ZebClient CLI configuration is completed, and Admin agree to deploy. 
+
+5. ZebClient Application nodes serve any type of application that communicate via File Interface or S3. In ZebClient we call this ultra-fast layer hot-tier because only data that is actively used are available on disk. Scale-up means that compute nodes can be replaced with more powerful machines. Scale-out means that additional instances are added to increase performance during heavy workloads.
+
+6. ZebClient cluster nodes provide redundancy to store written data. Warm-tier deliver data fast when requested by hot-tier and storage disks are less expensive. It is possible to simply choose a Performance & Redundancy package that suits the use case for the application using ZebClient.
+
+7. ZebClient S3 storage is named Cold-tier because this is data at rest. Always keeps the latest version of any data and is securely stored. Easy to move data stored between different cloud provider via ZebClient.
+
+8. User Interface to work with ZebClient High Performance Cluster. A software application can be installed locally or in a Virtual Desktop and interact with ZebClient via S3 or File Interface. Choose between Windows or Linux as operating system for Virtual Desktop. High performant GPU (Graphics Processing Unit) can be added for graphical design, rendering or gaming use cases.
+
 
 In the private subnets:
-// Add bullet points for any additional components that are included in the deployment. Make sure that the additional components are also represented in the architecture diagram.
-* <describe any additional components>.
 
-*The template that deploys the Quick Start into an existing VPC skips
-the components marked by asterisks and prompts you for your existing VPC
-configuration.
+ZebClient can be deployed OnPrem or as Hybrid cloud solution with a combination of OnPrem and AWS Cloud. Please contact Zebware for OnPrem or Hybrid cloud deployments, so we can recommend the best setup for your specific use case. Deployment is easy via ZebClient CLI, but it is required to provide IP-address to machines running OnPrem and some security system ports needs to be opened to allow communication with AWS cloud services.

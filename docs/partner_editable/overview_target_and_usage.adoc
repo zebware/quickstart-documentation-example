@@ -2,4 +2,8 @@
 // Identify your target audience and explain how/why they would use this Quick Start.
 //Avoid borrowing text from third-party websites (copying text from AWS service documentation is fine). Also, avoid marketing-speak, focusing instead on the technical aspect.
 
-This Quick Start is for users who <target audience and usage scenario>
+* This Quick Start is targeting users who want to deploy ZebClient in AWS Cloud. Please contact mailto:info@zebware.com[Zebware] for on-prem or hybrid-cloud installations.
+
+* To initiate a deployment of ZebClient, go to the Zebware Store to order a ZebClient trial license. ZebClient is offered in pre-defined packages which include an automated deployment of cloud compute and storage resources using customers’ own cloud credentials.  Via the Zebware Store, a link is provided to download the ZebClient CLI. Once installed on Linux, MacOS or Windows, the configuration of resources used for ZebClient can start via the ZebClient CLI. A customer login with the chosen access credentials (email-address and password) is also created via the Zebware Store. Follow the deployment wizard and answer the questions to complete the deployment. The deployment process takes about 15-30 minutes to complete.
+
+* Download the SSH key (Id_rsa) from Zebclient-Interactive and the Inventory file to get the IP-address to the Agents that provide S3 / File System access to ZebClient.

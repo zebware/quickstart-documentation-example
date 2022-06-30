@@ -3,7 +3,7 @@
 :partner-company-name: Zebware AB
 :doc-month: June
 :doc-year: 2022
-:partner-contributors: Lars Karlsson & Thomas Nilsson
+:partner-contributors: Lars Karlsson
 :quickstart-contributors: Jim Smith - AWS Global Partner SA, AWS & Joe Jones - Technical Product Manager, AWS
-:deployment_time: 20 minutes
+:deployment_time: 15-30 minutes
 :default_deployment_region: us-east-1

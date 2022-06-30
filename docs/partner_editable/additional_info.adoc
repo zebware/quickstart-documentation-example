@@ -2,14 +2,18 @@
 == Best practices for using {partner-product-name} on AWS
 // Provide post-deployment best practices for using the technology on AWS, including considerations such as migrating data, backups, ensuring high performance, high availability, etc. Link to software documentation for detailed information.
 
-_Add any best practices for using the software._
+* By default only one Application node is created. Run *zebclient-interactive* from command line and select Update to add Application nodes when extra performance is needed and remove the afterwards to save money. +
+
+* To change performance and redundancy level it is required to create a new ZebClient cluster and start use the new cluster. Then move the data from old to new cluster via S3 or file system interface. In next release an inlet will be added to simplity data migration.
 
 == Security
 // Provide post-deployment best practices for using the technology on AWS, including considerations such as migrating data, backups, ensuring high performance, high availability, etc. Link to software documentation for detailed information.
 
-_Add any security-related information._
+ZebClient eliminates need for separate backup data storage. +
+
+ZebClient writes data to hot and warm disks as well as to cold and durable cloud storage, thereby securing data protection and data availability.
 
 == Other useful information
 //Provide any other information of interest to users, especially focusing on areas where AWS or cloud usage differs from on-premises usage.
 
-_Add any other details that will help the customer use the software on AWS._
+For additional information about ZebClient and use cases please visit https://www.zebware.com/products/zebclient/[Zebware homepage,window=read-later] or https://zebware.gitlab.io/devops/zebclient-docs/[ZebClient Docs,window=read-later]
