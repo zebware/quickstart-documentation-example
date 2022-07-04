@@ -2,8 +2,12 @@
 
 == FAQ
 
-Please visit https://zebware.gitlab.io/devops/zebclient-docs/30_faq/[ZebClient FAQ,window=read-later] to find the latest updates.
+Please visit the https://zebware.gitlab.io/devops/zebclient-docs/30_faq/[ZebClient FAQ,window=read-later] to find the latest updates.
 
 == Troubleshooting
 
-Please visit https://zebware.gitlab.io/devops/zebclient-docs/30_faq/[ZebClient FAQ,window=read-later] to find the latest troubleshooting guide.
+Please visit the https://zebware.gitlab.io/devops/zebclient-docs/30_faq/[ZebClient FAQ,window=read-later] to find the latest troubleshooting guide.
+
+== Customer responsibility
+
+After you successfully deploy this Quick Start, confirm that your resources and services are updated and configured — including any required patches — to meet your security and functional requirements. For more information, see the https://aws.amazon.com/compliance/shared-responsibility-model/[AWS Shared Responsibility Model,window=read-later].

@@ -2,18 +2,18 @@
 == Best practices for using {partner-product-name} on AWS
 // Provide post-deployment best practices for using the technology on AWS, including considerations such as migrating data, backups, ensuring high performance, high availability, etc. Link to software documentation for detailed information.
 
-* By default only one Application node is created. Run *zebclient-interactive* from command line and select Update to add Application nodes when extra performance is needed and remove the afterwards to save money. +
+* By default, only one application node is created per cluster. Run *zebclient-interactive* from the command line and select Update to add application nodes for extra performance when needed. To save cost, remove the additional application nodes as soon as they no longer needed. +
 
-* To change performance and redundancy level it is required to create a new ZebClient cluster and start use the new cluster. Then move the data from old to new cluster via S3 or file system interface. In next release an inlet will be added to simplity data migration.
+* To change the performance and redundancy level, a new ZebClient cluster needs to be deployed. Data must be moved from the old to new cluster using either an S3 or a file system interface.
 
 == Security
 // Provide post-deployment best practices for using the technology on AWS, including considerations such as migrating data, backups, ensuring high performance, high availability, etc. Link to software documentation for detailed information.
 
-ZebClient eliminates need for separate backup data storage. +
+ZebClient eliminates the need for separate backup data storage. +
 
 ZebClient writes data to hot and warm disks as well as to cold and durable cloud storage, thereby securing data protection and data availability.
 
 == Other useful information
 //Provide any other information of interest to users, especially focusing on areas where AWS or cloud usage differs from on-premises usage.
 
-For additional information about ZebClient and use cases please visit https://www.zebware.com/products/zebclient/[Zebware homepage,window=read-later] or https://zebware.gitlab.io/devops/zebclient-docs/[ZebClient Docs,window=read-later]
+For additional information about ZebClient and ZebClient use cases, please visit https://www.zebware.com/products/zebclient/[zebware.com,window=read-later] or https://zebware.gitlab.io/devops/zebclient-docs/[ZebClient Docs,window=read-later]

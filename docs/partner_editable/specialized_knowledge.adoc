@@ -1,9 +1,18 @@
 // Replace the content in <>
 // Describe or link to specific knowledge requirements; for example: “familiarity with basic concepts in the areas of networking, database operations, and data encryption” or “familiarity with <software>.”
 
-* This Quick Start assumes familiarity with basic terminal window commands. ZebClient is designed to make deployments as smooth as possible, meaning configurations of ZebClient and creation, update or removal of an AWS Cluster is automated. Download and install ZebClient CLI with simple commands. ZebClient CLI will provide a simple wizard with questions to answer. It is required to have an existing AWS account, because AWS Access Key and Secret Key is used by ZebClient CLI to manage automatic deployment. Access Key and Secret Key is not stored by Zebware AB. It is possible to store Access Key and Secret Key on the computer that have ZebClient CLI installed with basic SET-command. 
+To verify that the proper ZebClient package and/or cluster size  are selected to fit your specific use case, a moderate to substantial experience of DevOps tasks and design work is recommended. +
 
-* A private SHH RSA Key for secure SSH access and an Inventory list with IP-addresses is created once the ZebClient cluster is ready to be used.
+This Quick Start also assumes familiarity with basic terminal window commands. +
 
-* DevOps knowledge is recommended to select a logical size for the ZebClient Cluster depending on your specific use case. By default, one Application node is deployed for all cluster sizes. With ZebClient CLI it is easy to scale out the ZebClient cluster with additional Application nodes when extra performance is needed and to scale down to save compute resources cost. Networking is managed by ZebClient CLI when it is installed in AWS Cloud.
+* ZebClient is designed to make deployments as smooth as possible. Using the ZebClient Manager tool, configurations of ZebClient and the creation, updates and removal of AWS clusters used for the ZebClient deployment are all automated.
 
+* To access the configuration and deployment automation tool, download and install the ZebClient CLI. For your convenience, the ZebClient CLI provides a simple deployment wizard.
+
+* ZebClient uses AWS Access Key and Secret Key for the automated deployment and therefore, an existing AWS account is required. Please note that the AWS Access Key and the Secret Key are not stored by Zebware AB.
+
+* Once the ZebClient cluster is ready to be used, a private SHH RSA Key for secure SSH access and an inventory list containing IP-addresses are created.
+
+* As part of the deployment process, one single Application node is deployed per cluster. The ZebClient CLI makes it easy to scale out the ZebClient cluster to include additional application nodes to add extra performance when needed and to scale down to save cost.
+
+* Networking is also managed by ZebClient CLI when installed in AWS Cloud.

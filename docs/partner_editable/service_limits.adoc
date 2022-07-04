@@ -1,8 +1,8 @@
 // Replace the <n> in each row to specify the number of resources used in this deployment. Remove the rows for resources that aren’t used.
 |===
 |Resource |This deployment uses AWS S3 IA for data storage. t4g.micro for Cluster nodes and m6i.xlarge for Application nodes.
-|VPCs |ZebClient Manager will create one VPC. In future release we will add support for using existing VPC.
-|AWS Identity and Access Management (IAM) security groups | ZebClient Manager create one IAM group.
-|IAM roles | ZebClient Manager create one IAM user.
-|Instances | ZebClient Manager create two instances one for Application nodes and second for Cluster nodes.
+|VPCs |ZebClient Manager will create one VPC.
+|AWS Identity and Access Management (IAM) security groups | ZebClient Manager creates one IAM group.
+|IAM roles | ZebClient Manager creates one IAM user.
+|Instances | ZebClient Manager creates two instances:  one for application nodes and second one for cluster nodes.
 |===

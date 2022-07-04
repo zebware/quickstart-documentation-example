@@ -1,23 +1,25 @@
 === Install ZebClient CLI
 
-The ZebClient CLI (Command Line Interface) is required to deploy ZebClient to the AWS Cloud.
+The ZebClient CLI (Command Line Interface) is required to deploy ZebClient in the AWS Cloud.
 
 === Prerequisites
 
 * Programming language https://www.python.org/downloads/[Python 3,window=read-later] and package manager https://pip.pypa.io/en/stable/[pip,window=read-later] must be installed.
-* A ZebClient license. A 30-days trial license can be ordered for free in the https://www.zebware.com/store/[Zebware store,window=read-later]. Selections of packages made in Zebware store will be followed by ZebClient CLI, meaning a new license and account must be created if new packages are selected in the Zebware store. It is recommended to use a generic email address like engineering@domain.com.
+* A ZebClient license key must be available.
 * Credentials to a cloud service provider.
+
+Note that trial and production licenses are ordered in the https://www.zebware.com/store[/Zebware store,window=read-later]. Based on what ZebClient package is selected in the Zebware store, the ZebClient CLI is tailored to deploy the contents of that package. When selecting to try or buy a new package, a new license and a new account must be created . When registering an account, it is recommended to use a generic email address like engineering@domain.com
 
 === Installation
 
-Zebware store provides a download link for ZebClient CLI as a ZIP-file that supports:
+Zebware store provides a ZebClient CLI download link formatted as a ZIP-file . The CLI supports installation on:
 
 * Linux
 * MacOS
 * Windows
-* Both arm64 and x86_64 +
+* arm64 and x86_64 +
 
-Use pip to install ZebClient CLI. Root access is required in Linux, so please add sudo before the installation command.
+Use pip to install ZebClient CLI. Root access is required in Linux. Please add sudo before the installation command.
 
 [source,ruby]
 ----
@@ -34,13 +36,13 @@ Select “Install” and answer a few configuration questions to deploy ZebClien
 
 One of the questions is ZEBCLIENT_ENDPOINT_URL [https://api.zebware.com/api/v1]: +
 
-Press enter to use default value. +
+Press enter to use the default value. +
 
-An email will be sent when ZebClient is ready to be used, which takes about 15-30 minutes depending on cluster size.
+An email will be sent when ZebClient is ready to be used. This takes about 15-30 minutes depending on the cluster size/ZebClient package selected.
 
 === Get access to ZebClient
 
-Wait until the confirmation email state that ZebClient is ready. +
+Wait until the confirmation email states that ZebClient is ready. +
 
 Start ZebClient CLI. +
 
