@@ -8,7 +8,7 @@ The ZebClient CLI (Command Line Interface) is required to deploy ZebClient in th
 * A ZebClient license key must be available.
 * Credentials to a cloud service provider.
 
-Note that trial and production licenses are ordered in the https://www.zebware.com/store[/Zebware store,window=read-later]. Based on what ZebClient package is selected in the Zebware store, the ZebClient CLI is tailored to deploy the contents of that package. When selecting to try or buy a new package, a new license and a new account must be created . When registering an account, it is recommended to use a generic email address like engineering@domain.com
+Note that trial and production licenses are ordered in the https://www.zebware.com/store[Zebware store,window=read-later]. Based on what ZebClient package is selected in the Zebware store, the ZebClient CLI is tailored to deploy the contents of that package. When selecting to try or buy a new package, a new license and a new account must be created . When registering an account, it is recommended to use a generic email address like engineering@domain.com
 
 === Installation
 
