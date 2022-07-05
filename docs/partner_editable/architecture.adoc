@@ -7,23 +7,22 @@ Figure 1: Quick Start architecture for ZebClient on AWS.
 
 As shown in Figure 1, the Quick Start sets up the following:
 
-1. ZebClient CLI (Command Line Interface) is available for Windows, macOS, Linux and interact with ZebClient Manager. ZebClient CLI configures ZebClient and create, update, or remove a cluster.
+1. The ZebClient CLI (Command Line Interface) interacts with ZebClient Manager and is available for Windows, macOS, and Linux. The ZebClient CLI configures ZebClient and creates, updates, or removes a cluster.
 
-2. ZebClient Manager running as a SaaS service is ready for service in a multi-tenant way.
+2. When provided as SaaS, ZebClient Manager is ready for service in a multi-tenant way.
 
-3. ZebClient Manager can optionally be installed in VPC with a single command in ZebClient CLI.
+3. Optionally, ZebClient Manager can be installed in a VPC with a single command in ZebClient CLI.
 
-4. Configure & Deploy starts when ZebClient CLI configuration is completed, and Admin agree to deploy. 
+4. Configure & Deploy starts when the ZebClient CLI configuration is completed, and the admin agrees to deploy.
 
-5. ZebClient Application nodes serve any type of application that communicate via File Interface or S3. In ZebClient we call this ultra-fast layer hot-tier because only data that is actively used are available on disk. Scale-up means that compute nodes can be replaced with more powerful machines. Scale-out means that additional instances are added to increase performance during heavy workloads.
+5. ZebClient application nodes serve any type of application that communicates via file interface or S3. In ZebClient we refer to the ultra-fast application nodes as a hot tier because only data that is actively used is available in this layer.
 
-6. ZebClient cluster nodes provide redundancy to store written data. Warm-tier deliver data fast when requested by hot-tier and storage disks are less expensive. It is possible to simply choose a Performance & Redundancy package that suits the use case for the application using ZebClient.
+6. The ZebClient warm tier cluster nodes provide redundancy and accessibility to data. The warm tier provides fast delivery of data when requested by the hot tier. Each ZebClient package uses a selected configuration of the warm tier to best fit the requirements of the application using ZebClient.
 
-7. ZebClient S3 storage is named Cold-tier because this is data at rest. Always keeps the latest version of any data and is securely stored. Easy to move data stored between different cloud provider via ZebClient.
+7. The ZebClient S3 storage is a cold tier holding data at rest. The cold storage does however keep and securely store the latest version of any data.
 
-8. User Interface to work with ZebClient High Performance Cluster. A software application can be installed locally or in a Virtual Desktop and interact with ZebClient via S3 or File Interface. Choose between Windows or Linux as operating system for Virtual Desktop. High performant GPU (Graphics Processing Unit) can be added for graphical design, rendering or gaming use cases.
+8. Software applications can be installed locally or in a virtual desktop and connect to ZebClient via S3 or file interface. Choose between Windows or Linux as operating system for Virtual Desktop. A high-performance GPU (Graphics Processing Unit) can be added for graphical design, rendering or gaming use cases.
 
+In private subnets:
 
-In the private subnets:
-
-ZebClient can be deployed OnPrem or as Hybrid cloud solution with a combination of OnPrem and AWS Cloud. Please contact Zebware for OnPrem or Hybrid cloud deployments, so we can recommend the best setup for your specific use case. Deployment is easy via ZebClient CLI, but it is required to provide IP-address to machines running OnPrem and some security system ports needs to be opened to allow communication with AWS cloud services.
+ZebClient can be deployed on-prem or in a hybrid-cloud solution combining on-prem and AWS cloud resources. Please contact Zebware for on-prem or hybrid-cloud deployments, to secure the best design and to enable a safe deployment on-prem where outside access from the AWS cloud needs to be allowed.

@@ -873,10 +873,7 @@ report bugs, or submit feature ideas for this Quick Start.
 <p>This Quick Start is targeting users who want to deploy ZebClient in AWS Cloud. Please contact <a href="mailto:info@zebware.com">Zebware</a> for on-prem or hybrid-cloud installations.</p>
 </li>
 <li>
-<p>To initiate a deployment of ZebClient, go to the Zebware Store to order a ZebClient trial license. ZebClient is offered in pre-defined packages which include an automated deployment of cloud compute and storage resources using customers’ own cloud credentials.  Via the Zebware Store, a link is provided to download the ZebClient CLI. Once installed on Linux, MacOS or Windows, the configuration of resources used for ZebClient can start via the ZebClient CLI. A customer login with the chosen access credentials (email-address and password) is also created via the Zebware Store. Follow the deployment wizard and answer the questions to complete the deployment. The deployment process takes about 15-30 minutes to complete.</p>
-</li>
-<li>
-<p>Download the SSH key (Id_rsa) from Zebclient-Interactive and the Inventory file to get the IP-address to the Agents that provide S3 / File System access to ZebClient.</p>
+<p>To initiate a deployment of ZebClient, go to the Zebware Store to order a ZebClient trial license.  ZebClient is offered in pre-defined packages which include an automated deployment of cloud compute and storage resources using customers’ own cloud credentials.  Via the Zebware Store, a link is provided to download the ZebClient CLI. Once installed on Linux, MacOS or Windows, the configuration of resources used for ZebClient can start via the ZebClient CLI. A customer login with the chosen access credentials (email-address and password) is also created via the Zebware Store. Follow the deployment wizard and answer the questions to complete the deployment. The deployment process takes about 15-30 minutes to complete.</p>
 </li>
 </ul>
 </div></div></td>
@@ -982,9 +979,6 @@ After you deploy the Quick Start, enable the <a href="https://docs.aws.amazon.co
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>This Quick Start requires a license for ZebClient. To use the Quick Start in your environment, sign up for a license at <a href="https://www.zebware.com/store/" target="read-later"><strong>Zebware Store</strong></a>.</p>
-</div>
-<div class="paragraph">
 <p>The Quick Start deploys a trial license. The trial license allows 30 days of free ZebClient use in a non-production environment. You can upgrade to a production license at any time by following the instructions in <a href="https://portal.zebware.com/user/login/" target="read-later"><strong>Customer Portal</strong></a>.</p>
 </div></div></td>
 </tr>
@@ -1021,36 +1015,36 @@ After you deploy the Quick Start, enable the <a href="https://docs.aws.amazon.co
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>ZebClient CLI (Command Line Interface) is available for Windows, macOS, Linux and interact with ZebClient Manager. ZebClient CLI configures ZebClient and create, update, or remove a cluster.</p>
+<p>The ZebClient CLI (Command Line Interface) interacts with ZebClient Manager and is available for Windows, macOS, and Linux. The ZebClient CLI configures ZebClient and creates, updates, or removes a cluster.</p>
 </li>
 <li>
-<p>ZebClient Manager running as a SaaS service is ready for service in a multi-tenant way.</p>
+<p>When provided as SaaS, ZebClient Manager is ready for service in a multi-tenant way.</p>
 </li>
 <li>
-<p>ZebClient Manager can optionally be installed in VPC with a single command in ZebClient CLI.</p>
+<p>Optionally, ZebClient Manager can be installed in a VPC with a single command in ZebClient CLI.</p>
 </li>
 <li>
-<p>Configure &amp; Deploy starts when ZebClient CLI configuration is completed, and Admin agree to deploy.</p>
+<p>Configure &amp; Deploy starts when the ZebClient CLI configuration is completed, and the admin agrees to deploy.</p>
 </li>
 <li>
-<p>ZebClient Application nodes serve any type of application that communicate via File Interface or S3. In ZebClient we call this ultra-fast layer hot-tier because only data that is actively used are available on disk. Scale-up means that compute nodes can be replaced with more powerful machines. Scale-out means that additional instances are added to increase performance during heavy workloads.</p>
+<p>ZebClient application nodes serve any type of application that communicates via file interface or S3. In ZebClient we refer to the ultra-fast application nodes as a hot tier because only data that is actively used is available in this layer.</p>
 </li>
 <li>
-<p>ZebClient cluster nodes provide redundancy to store written data. Warm-tier deliver data fast when requested by hot-tier and storage disks are less expensive. It is possible to simply choose a Performance &amp; Redundancy package that suits the use case for the application using ZebClient.</p>
+<p>The ZebClient warm tier cluster nodes provide redundancy and accessibility to data. The warm tier provides fast delivery of data when requested by the hot tier. Each ZebClient package uses a selected configuration of the warm tier to best fit the requirements of the application using ZebClient.</p>
 </li>
 <li>
-<p>ZebClient S3 storage is named Cold-tier because this is data at rest. Always keeps the latest version of any data and is securely stored. Easy to move data stored between different cloud provider via ZebClient.</p>
+<p>The ZebClient S3 storage is a cold tier holding data at rest. The cold storage does however keep and securely store the latest version of any data.</p>
 </li>
 <li>
-<p>User Interface to work with ZebClient High Performance Cluster. A software application can be installed locally or in a Virtual Desktop and interact with ZebClient via S3 or File Interface. Choose between Windows or Linux as operating system for Virtual Desktop. High performant GPU (Graphics Processing Unit) can be added for graphical design, rendering or gaming use cases.</p>
+<p>Software applications can be installed locally or in a virtual desktop and connect to ZebClient via S3 or file interface. Choose between Windows or Linux as operating system for Virtual Desktop. A high-performance GPU (Graphics Processing Unit) can be added for graphical design, rendering or gaming use cases.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>In the private subnets:</p>
+<p>In private subnets:</p>
 </div>
 <div class="paragraph">
-<p>ZebClient can be deployed OnPrem or as Hybrid cloud solution with a combination of OnPrem and AWS Cloud. Please contact Zebware for OnPrem or Hybrid cloud deployments, so we can recommend the best setup for your specific use case. Deployment is easy via ZebClient CLI, but it is required to provide IP-address to machines running OnPrem and some security system ports needs to be opened to allow communication with AWS cloud services.</p>
+<p>ZebClient can be deployed on-prem or in a hybrid-cloud solution combining on-prem and AWS cloud resources. Please contact Zebware for on-prem or hybrid-cloud deployments, to secure the best design and to enable a safe deployment on-prem where outside access from the AWS cloud needs to be allowed.</p>
 </div></div></td>
 </tr>
 </tbody>

@@ -1,5 +1,1 @@
-This Quick Start requires a license for {partner-product-name}. To use the Quick Start in your environment, sign up for a license at https://www.zebware.com/store/[*Zebware Store*,window=read-later].
-
 The Quick Start deploys a trial license. The trial license allows 30 days of free ZebClient use in a non-production environment. You can upgrade to a production license at any time by following the instructions in https://portal.zebware.com/user/login/[*Customer Portal*,window=read-later].
-
-
