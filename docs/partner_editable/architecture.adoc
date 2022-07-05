@@ -1,7 +1,7 @@
 When deploying this Quick Start, a ZebClient environment is installed in the AWS Cloud by use of a new virtual private cloud (VPC).
 
 // Replace this example diagram with your own. Send us your source PowerPoint file. Be sure to follow our guidelines here : http://(we should include these points on our contributors giude)
-image::architecture_diagram.png[image,width=1230,height=605]
+image::architecture_diagram.png[image,width=1050,height=622]
 
 Figure 1: Quick Start architecture for ZebClient on AWS.
 
